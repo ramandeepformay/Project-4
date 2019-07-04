@@ -66,15 +66,10 @@
     }
   }
 }
-   
-.container{
-  font-family: 'Lato', sans-serif;
-  width:90%;
-  margin:20px auto;
-  display: flex;
-  flex-direction:column;
-  align-items:center;
+ 
+.grid__row{
+  @include flexy($dir:column, $align:center);
 }
-.link{
-  border:1px solid green;
+.card p{
+  line-height:1.4;
 }

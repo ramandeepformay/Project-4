@@ -1,11 +1,24 @@
 // mixins directives
-  // @mixin flexy{
-  //   display:flex;
-  //   flex-direction: column;
-  //   align-items: center;
-  // }
-
-
+  @mixin flexy($dir:null,$jus:null,$align:null,$wrap:null){
+    display:flex;
+    flex-direction: $dir;
+    flex-wrap:$wrap;
+    justify-content:$jus;
+    align-items:$align;
+  }
+@mixin pseudo($wid:null, $hei:null, $top:null, $right:null, $bottom:null, $left:null){
+    &::before{
+      content:"";
+      position:absolute;
+      width:$wid;
+      height:$hei;
+      top:$top;
+      right:$right;
+      bottom:$bottom;
+      left:$left;
+      @content;
+  }
+}
 
 
 
