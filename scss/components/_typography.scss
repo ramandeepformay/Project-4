@@ -1,16 +1,15 @@
 
 // typography
 .container{
-    width:85%;
+    width:90%;
     margin:20px auto;
-    @include flexy($dir:column, $align:center);
+    @include flexy($dir:column);
     font-size:1.1rem;
     line-height:1.2;
     letter-spacing: 0.5px;
     font-family: "lato", sans-serif;
     color:$light-color
 }
-
 .headline--primary{
     margin:-5px 0px 40px 20px;
     width:80%;
@@ -21,8 +20,9 @@
 }
 .link{
     color:$color-secondary;
-    text-decoration: none;
+    text-decoration: none;  
 }
+// blockquote styling
 .blockquote{
     position:relative;
     font-style:italic;

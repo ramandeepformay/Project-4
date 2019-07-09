@@ -1,7 +1,8 @@
 
 // form styling
-.form{
-    margin-top:20px;
+.grid__col--4 .form{
+    margin-top:10%;
+   
 }
 .form__label--hidden{
     @extend %form;
@@ -11,11 +12,4 @@
     @extend %form;
     border-bottom:5px solid $color-primary;
     font-size:1rem;
-}
-.theme__colors{
-    @extend %form;
-    background:$color-secondary;
-    border-radius:5px;
-    color:$button-color;
-    text-transform:uppercase;
 }

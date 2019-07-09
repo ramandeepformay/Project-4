@@ -66,10 +66,24 @@
     }
   }
 }
- 
+//  layout styling
 .grid__row{
-  @include flexy($dir:column, $align:center);
+  @include flexy($dir:column);
 }
 .card p{
   line-height:1.4;
+}
+// grid buttons styling
+$grid-col:("12":#75F8D7, "6":#40A7CA, "4": #55DDF4, "3": #E1B1EE,"5":#88D5A9,"8":#E7A2A2,"7":#FDA28B);
+
+@each $name, $col in $grid-col{
+  .grid__col--#{$name}.theme__colors{
+    background: $col;
+    margin:0px 0px 5px 0px;
+    text-transform:lowercase;
+    color:$light-color;
+        &:hover{
+            background:darken($col, 10%);
+        }
+  }
 }

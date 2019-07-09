@@ -1,7 +1,18 @@
 // global variables
+
 $color-primary:#75F8D7;
+
+// color palette 1
 $color-secondary:#55DDF4;
+$dark-color:darken($color-secondary, 20%);
+
+// color palette 2
 $base-color:black;
-$light-color:lighten($base-color, 60%);
+$light-color:lighten($base-color, 50%);
+
+// button color
 $button-color:white;
+
+
+
 

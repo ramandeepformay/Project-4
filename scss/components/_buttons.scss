@@ -1,2 +1,28 @@
-
 //button styling
+
+// submit button
+.btn--defualt{
+    @extend %form;
+    background:$color-secondary;
+    @extend %btn;
+    &:hover{
+       background:$dark-color;
+    }
+}
+// theme color styling
+.theme__colors{
+    @extend %form; 
+    @extend %btn;
+}
+// button background functioning
+$btn-cols:("default":#55DDF4, "success": #59D589, "error":#E79296, "warning":#F7937E, "info":#958BCC);
+
+// each directive
+@each $name, $col in $btn-cols{
+    .btn--#{$name}{
+        background: $col;
+        &:hover{
+            background:darken($col, 10%);
+        }
+    }
+}
