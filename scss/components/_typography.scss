@@ -27,7 +27,7 @@
     position:relative;
     font-style:italic;
     font-size:1.6rem;
-    @include pseudo($wid:10px, $hei:180px, $top:0px, $left:-30px){
+    @include pseudo($wid:1%, $hei:100%, $top:0px, $left:-30px){
         background:$color-primary;
         border-radius:5px 0px 0px 5px;
     }

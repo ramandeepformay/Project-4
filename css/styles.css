@@ -280,6 +280,13 @@ template {
 .grid__row {
   display: flex;
   flex-direction: column; }
+  @media (min-width: 1400px) {
+    .grid__row {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      margin-left: 2%; } }
 
 .card p {
   line-height: 1.4; }
@@ -289,6 +296,10 @@ template {
   margin: 0px 0px 5px 0px;
   text-transform: lowercase;
   color: gray; }
+  @media (min-width: 1400px) {
+    .grid__col--12.theme__colors {
+      margin-left: 10px;
+      text-align: center; } }
   .grid__col--12.theme__colors:hover {
     background: #44f6c9; }
 
@@ -297,6 +308,10 @@ template {
   margin: 0px 0px 5px 0px;
   text-transform: lowercase;
   color: gray; }
+  @media (min-width: 1400px) {
+    .grid__col--6.theme__colors {
+      margin-left: 10px;
+      text-align: center; } }
   .grid__col--6.theme__colors:hover {
     background: #2f89a8; }
 
@@ -305,6 +320,10 @@ template {
   margin: 0px 0px 5px 0px;
   text-transform: lowercase;
   color: gray; }
+  @media (min-width: 1400px) {
+    .grid__col--4.theme__colors {
+      margin-left: 10px;
+      text-align: center; } }
   .grid__col--4.theme__colors:hover {
     background: #25d3f1; }
 
@@ -313,6 +332,10 @@ template {
   margin: 0px 0px 5px 0px;
   text-transform: lowercase;
   color: gray; }
+  @media (min-width: 1400px) {
+    .grid__col--3.theme__colors {
+      margin-left: 10px;
+      text-align: center; } }
   .grid__col--3.theme__colors:hover {
     background: #d187e5; }
 
@@ -321,6 +344,10 @@ template {
   margin: 0px 0px 5px 0px;
   text-transform: lowercase;
   color: gray; }
+  @media (min-width: 1400px) {
+    .grid__col--5.theme__colors {
+      margin-left: 10px;
+      text-align: center; } }
   .grid__col--5.theme__colors:hover {
     background: #62c88e; }
 
@@ -329,6 +356,10 @@ template {
   margin: 0px 0px 5px 0px;
   text-transform: lowercase;
   color: gray; }
+  @media (min-width: 1400px) {
+    .grid__col--8.theme__colors {
+      margin-left: 10px;
+      text-align: center; } }
   .grid__col--8.theme__colors:hover {
     background: #dd7979; }
 
@@ -337,8 +368,20 @@ template {
   margin: 0px 0px 5px 0px;
   text-transform: lowercase;
   color: gray; }
+  @media (min-width: 1400px) {
+    .grid__col--7.theme__colors {
+      margin-left: 10px;
+      text-align: center; } }
   .grid__col--7.theme__colors:hover {
     background: #fc7a59; }
+
+@media (min-width: 1400px) {
+  .grid__col--12 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center; } }
+.grid__col--12 .theme__colors {
+  margin: 1%; }
 
 .nav {
   margin: 20px auto;
@@ -353,6 +396,16 @@ template {
     width: 100%;
     display: block;
     padding: 1rem 10rem; }
+  @media (min-width: 1400px) {
+    .nav {
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-end;
+      align-items: center;
+      width: 70%;
+      margin: auto; }
+      .nav a {
+        padding: 0.5rem; } }
 
 .nav a:hover {
   border: 1px solid #75F8D7;
@@ -391,8 +444,8 @@ template {
   .blockquote::before {
     content: "";
     position: absolute;
-    width: 10px;
-    height: 180px;
+    width: 1%;
+    height: 100%;
     top: 0px;
     left: -30px;
     background: #75F8D7;
@@ -402,6 +455,10 @@ template {
   display: block;
   width: 40%;
   margin: auto; }
+  @media (min-width: 1400px) {
+    .img--logo {
+      width: 50%;
+      margin: auto; } }
 
 .img--avatar {
   display: block;

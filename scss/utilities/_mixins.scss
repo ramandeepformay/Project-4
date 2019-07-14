@@ -6,6 +6,7 @@
     justify-content:$jus;
     align-items:$align;
   }
+  // mixin deirective for absolute postioning
 @mixin pseudo($wid:null, $hei:null, $top:null, $right:null, $bottom:null, $left:null){
     &::before{
       content:"";
@@ -17,6 +18,12 @@
       bottom:$bottom;
       left:$left;
       @content;
+  }
+}
+// media query mixin directive
+@mixin mediaQuery($value:null){
+  @media(min-width:$value){
+    @content;
   }
 }
 

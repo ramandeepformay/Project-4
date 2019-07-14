@@ -4,6 +4,11 @@
     display:block;
     width:40%;
     margin: auto;
+    //using media query directive
+    @include mediaQuery(1400px){
+        width:50%;
+        margin:auto;
+    }
 }
 .img--avatar{
     display:block;
