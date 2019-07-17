@@ -13,10 +13,10 @@
         color:$light-color;
         width:100%;
         display:block;
-        padding:1rem 10rem;
+        padding:$font-base 10rem;
    }
      // nav media styling
-   @include mediaQuery(1400px){
+   @include mediaQuery(map-get($break-points, "l")){
      //    using flexy directive to style nav 
      @include flexy($dir:row, $jus:flex-end, $align:center);
      width:70%;

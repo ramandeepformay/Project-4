@@ -13,3 +13,12 @@ $light-color:lighten($base-color, 50%);
 // button color
 $button-color:white;
 
+
+// font variables
+$font-base:1rem;
+
+// breakpoints for media queries
+$break-points: (
+    "xs": 768px,
+    "l":1400px
+)

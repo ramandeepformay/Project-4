@@ -6,12 +6,11 @@
     border:none;
     outline: none;
 }
-
 // extend directives for styling buttons
 %btn{
     border-radius:5px;
     color:$button-color;
     text-transform:uppercase;
-    font-size:0.9rem;
+    font-size:$font-base;
 }
 

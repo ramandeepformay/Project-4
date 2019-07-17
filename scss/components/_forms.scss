@@ -11,5 +11,5 @@
 .form__input{
     @extend %form;
     border-bottom:5px solid $color-primary;
-    font-size:1rem;
+    font-size:$font-base;
 }

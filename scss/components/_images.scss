@@ -5,7 +5,7 @@
     width:40%;
     margin: auto;
     //using media query directive
-    @include mediaQuery(1400px){
+    @include mediaQuery(map-get($break-points, "l")){
         width:50%;
         margin:auto;
     }
