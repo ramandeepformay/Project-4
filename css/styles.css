@@ -395,7 +395,7 @@ template {
     color: gray;
     width: 100%;
     display: block;
-    padding: 1rem 10rem; }
+    padding: 1rem; }
   @media (min-width: 1400px) {
     .nav {
       display: flex;
