@@ -13,7 +13,7 @@
         color:$light-color;
         width:100%;
         display:block;
-        padding:$font-base 10rem;
+        padding:$font-base;
    }
      // nav media styling
    @include mediaQuery(map-get($break-points, "l")){
